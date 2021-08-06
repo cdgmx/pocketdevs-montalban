@@ -4,15 +4,17 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = ".5rem";
+    document.getElementById("navbar").style.backgroundColor = "beige";
     document.getElementById("logo").style.fontSize = "30px";
-    document.getElementById("navbar-right").style.marginTop ="0px";
+    document.getElementById("navbar-buttons").style.fontSize ="1.5rem";
     document.getElementById("logo").getElementsByTagName("img")[0].style.display ="none";
 
   } else {
       
-    document.getElementById("navbar").style.padding = "1.5rem";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar-right").style.marginTop ="50px";
+    document.getElementById("navbar").style.padding = "1rem";
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("logo").style.fontSize = "1rem";
+    document.getElementById("navbar-buttons").style.fontSize ="2rem";
     document.getElementById("logo").getElementsByTagName("img")[0].style.display ="inline";
   }
 }

@@ -35,11 +35,6 @@ body{
   font-family: "Roboto",serif;
 }
 
-.test{
-  width:375px;
-  height: 100px;
-  background-color: violet;
-}
 
 #navbar {
   overflow: hidden;
