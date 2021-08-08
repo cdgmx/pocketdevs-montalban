@@ -90,7 +90,6 @@ Login to Continue
 			</div>
 			<p class="small-text">Don't have an account? <a href="register.php">Register</a></p>
 		</div>
-		
 	</form>
 
 
@@ -121,7 +120,6 @@ Login to Continue
 				else{
 					document.getElementById("txtHint").innerHTML = 'Unkown Error';
 				}
-
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 			console.log(textStatus, errorThrown);
