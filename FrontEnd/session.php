@@ -9,8 +9,11 @@ session_start();
     }
     else{
         echo "<form action='login.php'>
-            <button type='submit'>Login</button>
-        </form>";
+        <input type='submit' name='signin'  value='Sign in'></input>
+    </form>
+    <form action='register.php'>
+        <input type='submit' name='signup' value='Sign up'></input>
+    </form>";
         // echo "<button href='login.php'>Login</button>";
     }   
 ?>

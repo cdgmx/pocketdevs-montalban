@@ -36,24 +36,55 @@ body{
   font-family: "Roboto",serif;
 }
 
-.sidenavbar{
-  position:fixed;
-  width: 100px;
 
-  height: 100vh;
-  background-color: burlywood;
-  z-index: 100;
-  left: -300px;
-  transition: width 2s;
-  display:block;
+
+.navmain{
+  overflow: hidden;
+  padding:1rem;
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  display:flex;
+  background-color: chocolate;
+}
+.navbar-nav, .nav-item{
+  display:flex
 }
 
-.active{
-  display:block;
-  height: 100vh;
-  left:0;
-  transition: 400ms ease;
+.navbar-nav{
+
+  align-items: center;
+  flex-grow: 1;
+
 }
+
+.nav-item{
+  margin: 0 10px;
+  text-decoration:none;
+}
+
+.navbar-toggle{
+  display:none
+}
+
+ .nav-close-btn{
+  display: none;
+}
+
+.navbar-sign{
+  display:flex;
+  margin-left: auto;
+}
+.navbar-sign button{
+  width: 110px;
+
+}
+
+
+
+
 
 
 .navbar {

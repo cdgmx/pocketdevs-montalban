@@ -7,6 +7,65 @@
       width:150px;
       height: 35px;
     }
+
+    .navbar-nav{
+      position:fixed;
+      width: 100px;
+      height: 100vh;
+      background-color: burlywood;
+      z-index: 100;
+      left: -300px;
+      transition: width 2s;
+      top: 0;
+      padding:1rem;
+      text-decoration:none;
+      
+      
+    } 
+
+    .navbar-toggle{
+      display:flex;
+      margin-left: auto;
+      align-self: center;
+      text-decoration:none;
+    }
+
+
+    .active{
+     
+      display:flex;
+      height: 100vh;
+      left:0;
+      transition: 400ms ease;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-decoration:none;
+
+    
+
+    }
+
+    
+    .nav-close-btn{
+      display: flex;
+      align-self: flex-end;
+ 
+    }
+
+
+    .nav-item{
+      margin: 10px 0;
+    }
+
+
+    .navbar-sign{
+      flex-direction: column;
+      margin: 0;
+      text-align: center;
+      align-self: center;
+   
+    }
     
     .article-1 h1{
       font-size: 2.25rem;

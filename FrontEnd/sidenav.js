@@ -1,12 +1,14 @@
-const toggleBtn = document.querySelector(".icon");
-const navbarNav = document.querySelector(".sidenavbar");
-const navCloseBtn = document.querySelector(".sidenavbar .closeside");
+const toggleBtn = document.querySelector(".navbar-toggle");
+const navbarNav = document.querySelector(".navbar-nav");
+const navCloseBtn = document.querySelector(".navbar-nav .nav-close-btn");
 
 
 toggleBtn.addEventListener("click", () => {
   var x = navbarNav.classList.toggle("active");
+  console.log(x)
 
 });
 navCloseBtn.addEventListener("click", () => {
     navbarNav.classList.remove("active");
+
   });

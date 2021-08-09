@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/topnav-drpdwn.css" />
         <script src="test.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	
 
        
@@ -37,20 +37,43 @@
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div> -->   
-        <div class="sidenavbar">
-            <a href="javascript:void(0);" class="closeside">
-                <i class="fa fa-bars"></i>
-            </a>
-
-        </div>
-
-
-        <div class="navbar" id="myTopnav"> 
-           
+        <div class="navmain">
+          
             <div id="logo">
                 <img src="https://i.ibb.co/DKNMyDP/Logo-2-2.png">
                 <h5> LE FIUME CUISINE</h5>
             </div>
+
+            <a href="javascript:void(0);" class="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </a>
+            
+            <ul class="navbar-nav">
+                <a href="javascript:void(0);" class="nav-close-btn">
+                    <i class="fas fa-times-circle"></i>
+                </a>
+                
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a> </li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <!-- <li><div id="login"></div>
+                </li> -->
+             
+                    <div class="navbar-sign"></div>
+                    
+           
+
+
+            </ul>
+        </div>
+
+
+        <!-- <div class="navbar" id="myTopnav"> 
+           
+            <div id="logo">
+                <img src="https://i.ibb.co/DKNMyDP/Logo-2-2.png">
+                <h5> LE FIUME CUISINE</h5>
+            </div> -->
             <!-- <a href="#default" id="logo">
                 <img src="https://i.ibb.co/DKNMyDP/Logo-2-2.png">
                 <a>LE FIUME CUISINE</a>
@@ -67,9 +90,9 @@
 <!-- 
             <div class ="drop-button"></div> -->
             <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
-            <a href="javascript:void(0);" class="icon">
+            <!-- <a href="javascript:void(0);" class="icon">
                 <i class="fa fa-bars"></i>
-            </a>
+            </a> -->
             <!-- </div> -->
 <!--             
             <div id="login">
@@ -81,7 +104,7 @@
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
             </div> -->
-          </div>
+          <!-- </div> -->
 
         <div class="content">
             <div class="container">
@@ -223,8 +246,9 @@
     <script src="sidenav.js" async defer></script>
     <script type="text/javascript">
         $.ajax({url: "session.php"}).done(function(html) {
-            document.getElementById("login").innerHTML = html;
-            
+            document.getElementsByClassName("navbar-sign")[0].innerHTML = html;
+        
+          
         });
 
         function logout(){
