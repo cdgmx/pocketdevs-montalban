@@ -12,7 +12,7 @@
 
 .feed-content{
     display: flex;
-    background-color: rgb(182, 174, 174);
+    /* background-color: rgb(182, 174, 174); */
     height: 100vh;
     flex-direction: column;
     overflow: auto;
@@ -23,15 +23,28 @@
 
 .feed-content .feed-post{
     display: flex;
-    background-color: cyan;
+    /* background-color: cyan; */
     width: 100%;
 }
 .entry-article{
     padding: 1rem;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     flex-grow: 1;
 }
 
+/* .add-entry, .nav-close-btn{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+} */
+
+.nav-close-btn{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration:none;
+    font-size: 50px;
+}
 
 
 /* .feed-content .feed-img{
