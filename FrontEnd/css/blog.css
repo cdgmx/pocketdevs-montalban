@@ -1,0 +1,37 @@
+
+.feed-switch{
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    overflow: hidden;
+    top: 0;
+    padding: 1rem;
+    column-gap: 1rem;
+
+}
+
+.feed-content{
+    display: flex;
+    background-color: rgb(182, 174, 174);
+    height: 100vh;
+    flex-direction: column;
+    overflow: auto;
+
+}
+
+
+
+.feed-content .feed-post{
+    display: flex;
+    background-color: cyan;
+    width: 100%;
+}
+.entry-article{
+    padding: 1rem;
+}
+
+
+
+/* .feed-content .feed-img{
+
+} */
