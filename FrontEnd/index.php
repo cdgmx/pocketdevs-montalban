@@ -5,11 +5,12 @@
 
 
 <?php
-
+    $post = new Post;
     $template = new Template('templates/frontpage.php');
     
     $template->title = 'latest posts';
+    $template->posts = $post->getAllPosts();
 
-    echo  $template;
+    echo $template;
 
 ?>

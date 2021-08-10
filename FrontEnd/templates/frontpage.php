@@ -1,1 +1,5 @@
-<?php echo $title; ?>
+<?php 
+
+    include 'inc/content.php';
+
+?>

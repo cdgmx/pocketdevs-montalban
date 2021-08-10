@@ -7,7 +7,10 @@
         }
 
         public function getAllPosts(){ 
+            $this->db->query("SELECT * FROM posts");
 
+            $results = $this->db->resultSet();
+            return $results;
         }
     }
 

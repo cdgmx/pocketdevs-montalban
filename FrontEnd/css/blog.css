@@ -28,6 +28,8 @@
 }
 .entry-article{
     padding: 1rem;
+    background-color: blueviolet;
+    flex-grow: 1;
 }
 
 
