@@ -7,10 +7,13 @@
 
 
 <?php
-  
+   
+
+    $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id']:null;
+
     $page = isset($_GET['page'])? $_GET['page']:'Post';
  
-    $user_id = $_SESSION['user_id'];
+    
  
 
 

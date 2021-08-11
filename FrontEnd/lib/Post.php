@@ -17,14 +17,20 @@
             // $this->db->query("SELECT posts.*, users.username FROM users
             // INNER JOIN posts ON posts.user_id = $user_id
             // ");
+            
+            if(isset($user_id)){
+                $this->db->query("SELECT posts.* FROM posts
+                WHERE posts.user_id = $user_id
+                ");
+                $results = $this->db->resultSet();
+            }
+            else{
 
-            $this->db->query("SELECT posts.* FROM posts
-            WHERE posts.user_id = $user_id
-            ");
-            
-            $results = $this->db->resultSet();
-            
+                return [];
+
+            }
             return $results;
+           
         }
     }
 
