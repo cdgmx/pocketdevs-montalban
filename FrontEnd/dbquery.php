@@ -66,6 +66,8 @@ function loginUser(){
     if($match){
       
       $_SESSION['firstname'] = $resFetch['firstname'];
+      $_SESSION['user_id']  = $resFetch['user_id'];
+      
       $res->query = 'success';
       $res->data = "You sucessfuly logged in";
       $res->querydata = $resFetch;

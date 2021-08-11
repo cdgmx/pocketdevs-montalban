@@ -247,7 +247,7 @@
     <script type="text/javascript">
         $.ajax({url: "session.php"}).done(function(html) {
             document.getElementsByClassName("navbar-sign")[0].innerHTML = html;
-        
+            console.log(html);
           
         });
 

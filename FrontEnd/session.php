@@ -5,7 +5,7 @@
 session_start();
     if(isset($_SESSION['firstname'])){
         $username = $_SESSION['firstname'];
-        echo "<a> Welcome $username</a> <a onclick='logout()''> Logout </a>";
+        echo "<a> Welcome $username </a> <a onclick='logout()''> Logout </a>";
     }
     else{
         echo "<form action='login.php'>
