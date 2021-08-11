@@ -29,9 +29,15 @@
            
         }
         public function deleteUserPost($post_id, $user_id){
+
             $this->db->query("DELETE FROM posts
                 WHERE posts.post_id = $post_id AND posts.user_id = $user_id
             ");
+
+            $results = $this->db->execute();
+
+            return  $results ;
+            // $results = $this->db->execute();
         }
     }
 

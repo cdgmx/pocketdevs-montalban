@@ -14,8 +14,9 @@
                         <p>
                             <?php echo $post->content; ?>
                         </p>
-                        <div class="entry-modify" name="formm" value="test">
-                            <form action ="?test=123" method="get">
+                        <div class="entry-modify">
+
+                            <form action ="newquery.php" method="get">
                                 <input type="submit" id ='test' name ='modify' value="Delete">
                                 <input type="submit" value="Edit">
                                 <input type="hidden" name="post_id" value="<?php echo $post->post_id;?>">
