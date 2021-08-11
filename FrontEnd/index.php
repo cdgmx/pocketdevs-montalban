@@ -36,7 +36,11 @@
             $template = new Template('templates/personalpage.php');
             
             $template->title = 'latest posts';
-            $template->posts = $post->getAllUserPosts($user_id);
+
+            $template->posts = ($user_id? $post->getAllUserPosts($user_id): []);
+            
+
+            // $template->posts = $post->getAllUserPosts($user_id);
 
             echo $template;
         }

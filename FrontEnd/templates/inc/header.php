@@ -21,7 +21,7 @@
 
         <div class="feed-switch">
             <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method="get">
-                <input type="submit" name="page" value="Feed">
+                <input type="submit" name="page"  value="Feed">
                 <input type="submit" name="page" value="Post">
                 <!-- <div><a>Feed</a></div>
                 <div><a>Post</a></div> -->

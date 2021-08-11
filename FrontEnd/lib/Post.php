@@ -18,19 +18,20 @@
             // INNER JOIN posts ON posts.user_id = $user_id
             // ");
             
-            if(isset($user_id)){
+        
                 $this->db->query("SELECT posts.* FROM posts
-                WHERE posts.user_id = $user_id
+                WHERE posts.user_id = $user_id 
                 ");
                 $results = $this->db->resultSet();
-            }
-            else{
-
-                return [];
-
-            }
+            
+         
             return $results;
            
+        }
+        public function deleteUserPost($post_id, $user_id){
+            $this->db->query("DELETE FROM posts
+                WHERE posts.post_id = $post_id AND posts.user_id = $user_id
+            ");
         }
     }
 
