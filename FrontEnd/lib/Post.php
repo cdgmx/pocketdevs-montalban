@@ -49,6 +49,16 @@
             return  $results ;
 
         }
+
+        public function updateUserPost($data){
+           
+            $this->db->query("UPDATE posts SET title='$data[0]',img_link='$data[1]',content='$data[2]'
+            WHERE posts.user_id = '$data[3]'");
+
+            $results = $this->db->execute();
+            return  $results ;
+
+        }
     }
 
 ?>

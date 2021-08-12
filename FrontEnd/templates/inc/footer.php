@@ -12,7 +12,7 @@
       
         <script async defer>
             // Get the modal    
-
+        
         var addimgbtn = document.getElementById("img-linkID")
 
         var linkArea = document.getElementById("add-link")
@@ -27,6 +27,20 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+
+            //editing post variables
+
+        var editbtn = document.getElementById('editpost');
+        editbtn.onclick = function(){
+            modal.style.display = "block"; //change modal var
+            document.getElementById('title-input').value = '<?php echo $post->title; ?>'
+            document.getElementById('imglink-input').value = '<?php echo $post->img_link; ?>'
+            document.getElementById('txt-area').value = '<?php echo $post->content; ?>'  
+            document.getElementById('submit-post').value = 'Edit'  
+        }
+
+
+
         // When the user clicks on the button, open the modal
         addimgbtn.onclick = function(){
             linkArea.style.display ="flex";
@@ -38,8 +52,9 @@
             
         btn.onclick = function() {
             modal.style.display = "block";
-        
         }
+        
+
         
 
         // When the user clicks on <span> (x), close the modal
