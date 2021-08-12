@@ -17,8 +17,8 @@
                         <div class="entry-modify">
 
                             <form action ="newquery.php" method="get">
-                                <input type="submit" id ='test' name ='modify' value="Delete">
-                                <input type="submit" value="Edit">
+                                <input type="submit" id ='test' name ='modifypost' value="Delete">
+                                <input type="submit"  name ='modifypost' value="Edit">
                                 <input type="hidden" name="post_id" value="<?php echo $post->post_id;?>">
                             </form>
                         </div>

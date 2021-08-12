@@ -39,6 +39,16 @@
             return  $results ;
             // $results = $this->db->execute();
         }
+
+        public function addUserPost($data){
+           
+            $this->db->query("INSERT INTO posts (title,img_link,content,user_id)
+            VALUES ('$data[0]','$data[1]','$data[2]','$data[3]')");
+
+            $results = $this->db->execute();
+            return  $results ;
+
+        }
     }
 
 ?>
