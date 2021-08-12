@@ -1,4 +1,12 @@
 
+img{
+  max-width: 200px;
+  height: auto;
+  background-color: chartreuse;
+}
+
+
+
 .feed-switch{
     display: flex;
     justify-content: center;

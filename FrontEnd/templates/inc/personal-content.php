@@ -4,7 +4,7 @@
             <?php foreach($posts as $count=>$post): ?>
                 <div class="feed-post">
                     <div class="feed-img">
-                        <img src='https://via.placeholder.com/200/09f.png/fff'>
+                        <img src='<?php echo $post->img_link?>'>
                     </div>
                 
 

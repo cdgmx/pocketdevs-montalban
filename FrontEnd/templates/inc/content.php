@@ -7,7 +7,7 @@
                     <!-- check if even or odd -->
                     <?php if($count %2 === 0): ?>
                     <div class="feed-img">
-                        <img src='https://via.placeholder.com/300/09f.png/fff'>
+                        <img src='<?php echo $post->img_link?>'>
                     </div>
                     
 
@@ -29,7 +29,7 @@
                             </p>
                         </div>
                         <div class="feed-img">
-                            <img src='https://via.placeholder.com/300/09f.png/fff'>
+                            <img src='<?php echo $post->img_link?>'>
                         </div>    
                     <?php endif; ?>
                 </div>
