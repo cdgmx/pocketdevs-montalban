@@ -4,7 +4,8 @@
     display: flex;
     background-color: white;
     flex-direction: column;
-    padding-top: 200px;
+    margin-top:200px;
+
     
     
 
@@ -16,6 +17,7 @@
     justify-content: center;
     padding: 1rem;
     column-gap: 1rem;
+ 
     
 }
 
@@ -23,19 +25,19 @@
   display: flex;
   /* max-width: 50px;
   height: auto; */
- width:200px;
+  width:200px;
   background-color: chartreuse;
   overflow: hidden;
 }
 
 
   
-img{
+/* img{
     display: flex;
     max-width:100%;
     max-height:100%;
     background-color: chartreuse;
-  }
+  } */
   
 
 

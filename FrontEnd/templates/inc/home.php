@@ -132,35 +132,8 @@
             </div> -->
             </div>
         </div>
-
-        
-        
     </body>
-    <script src="sidenav.js" async defer></script>
-    <script type="text/javascript">
-        $.ajax({url: "session.php"}).done(function(html) {
-            document.getElementsByClassName("navbar-sign")[0].innerHTML = html;
-            console.log(html);
-          
-        });
 
-        function logout(){
-            $.ajax({url: "logout.php"}).done(function(html) {
-                location = location
-                });
-        }
-
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
-            }
-        }
-       
-
-        // document.getElementById("login").innerHTML = '<a href="login.php">Login</a>';
-    </script>
+    
 
 </html>

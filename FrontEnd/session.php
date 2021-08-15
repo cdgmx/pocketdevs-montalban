@@ -2,18 +2,18 @@
 
 <?php  
 // isset($_SESSION['username']
+$res =  (object)[]; 
     session_start();
         if(isset($_SESSION['firstname'])){
             $username = $_SESSION['firstname'];
-            echo "<a> Welcome $username </a> <a onclick='logout()''> Logout </a>";
+            $res->status = true;
+            $res->data = $username;
+            echo json_encode($res);
+            exit();
         }
         else{
-            echo "<form action='login.php'>
-            <input type='submit' name='signin'  value='Sign in'></input>
-        </form>
-        <form action='register.php'>
-            <input type='submit' name='signup' value='Sign up'></input>
-        </form>";
-            // echo "<button href='login.php'>Login</button>";
+            $res->status = false;
+            echo json_encode($res);
+            exit();
         }   
 ?>

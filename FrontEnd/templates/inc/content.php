@@ -1,5 +1,5 @@
 
-        <div class="feed-content">
+  <div class="feed-content">    
             <?php foreach($posts as $count=>$post): ?>
                 <div class="feed-post">
 

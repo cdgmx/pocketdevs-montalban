@@ -1,6 +1,6 @@
 const toggleBtn = document.querySelector(".navbar-toggle");
 const navbarNav = document.querySelector(".navbar-nav");
-const navCloseBtn = document.querySelector(".navbar-nav .nav-close-btn");
+const navCloseBtn = document.querySelector(".navbar-nav .snav-close-btn");
 
 
 toggleBtn.addEventListener("click", () => {

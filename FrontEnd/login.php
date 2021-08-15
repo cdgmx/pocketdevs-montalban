@@ -112,7 +112,7 @@ Login to Continue
 				console.log(res)
 				if(res.query === "success"){
 					// console.log(res.querydata)
-					location.href = "main.html"
+					location.href = "index.php"
 				}else if(res.query === "error"){
 				
 					document.getElementById("txtHint").innerHTML = res.data;

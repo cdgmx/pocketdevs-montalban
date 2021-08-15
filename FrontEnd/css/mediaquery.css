@@ -10,16 +10,15 @@
 
     .navbar-nav{
       position:fixed;
-      width: 100px;
+      width: 200px;
       height: 100vh;
       background-color: burlywood;
       z-index: 100;
-      left: -300px;
+      left: -600px;
       transition: width 2s;
       top: 0;
       padding:1rem;
       text-decoration:none;
-      
       
     } 
 
@@ -47,7 +46,7 @@
     }
 
     
-    .nav-close-btn{
+    .snav-close-btn{
       display: flex;
       align-self: flex-end;
  
