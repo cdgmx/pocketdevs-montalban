@@ -5,10 +5,24 @@
           box-sizing: border-box;
   text-decoration: none;
   color: black;
+  list-style-type: none;
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body h1 {
+  font-size: 2.8rem;
+}
+
+body h2 {
+  font-size: 2.25rem;
+}
+
+body a {
   font-size: 16px;
 }
 
@@ -51,7 +65,7 @@ input {
   padding: 1rem;
   padding-bottom: 50px;
   top: 0;
-  background-color: crimson;
+  background-color: white;
   height: 150px;
   /* background-color: chocolate; */
   font-size: 1.25rem;
@@ -165,7 +179,6 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: wheat;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: .5rem;
@@ -177,25 +190,133 @@ input {
   text-align: center;
 }
 
-.content {
+#content {
+  padding: 10rem 1rem;
+}
+
+#reservation {
+  text-align: center;
+  padding: 1rem;
+}
+
+#reservation input {
+  margin: .5rem;
+}
+
+#side-menu {
+  padding: 1rem;
+}
+
+.footer {
+  position: relative;
+  background-color: #afafaf;
+  height: 100%;
+  width: 100vw;
+  margin-top: auto;
+  bottom: 0;
+}
+
+.footer .logo {
+  width: 100px;
+}
+
+.footer .icons {
+  width: 1rem;
+}
+
+.footer #contact-details {
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer li img {
+  margin: 0 1rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 120px 200px;
-  /* background-color: chocolate; */
-  /* width: 100%; */
-  /* max-width: 100% !important;
-    overflow-x: hidden !important;
-    min-height: 900px; */
-  margin-top: 150px;
-  overflow: hidden;
-  background-color: #2f00ff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.article {
+  margin: 2rem 0;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.article-content {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  text-align: left;
+  padding: 0 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.article-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+
+.parallax {
+  background-image: url("https://i.ibb.co/4pMt427/image.png");
+  margin: 1rem 0rem;
+  padding: 0em;
+  overflow: visible;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.round-img {
+  border-radius: 50%;
+  max-width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1rem;
+}
+
+.flex-equal > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.readmore {
+  margin: 1rem 0;
+  background: white;
+  border-radius: 15px;
+}
+
+.readmore:hover {
+  background: #D7D7D7;
 }
 /*# sourceMappingURL=main.css.map */

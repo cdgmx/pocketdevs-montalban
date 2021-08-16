@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  list-style-type: none;
 }
 
 $display3: 6rem;
@@ -16,9 +17,20 @@ $subheading:1.25rem;
 $body:16px;
 
 body{
-  
+    overflow-x:hidden;
     font-family: 'Roboto', sans-serif;
     font-size: $body;
+    
+      h1{
+        font-size: $display1;
+      }
+      h2{
+        font-size: $headline;
+      }
+      a{
+        font-size: $body;
+      }
+  
   
 }
 
@@ -32,6 +44,8 @@ input{
   border-radius: 5px;
   background-color: transparent;
 }
+
+
 
 .feed-switch input{
     width: 80px;
@@ -59,7 +73,7 @@ input{
     padding: 1rem;
     padding-bottom: 50px;
     top:0;
-    background-color: crimson;
+    background-color: white;
     height: 150px;
     /* background-color: chocolate; */
     font-size: $subheading;
@@ -156,7 +170,7 @@ input{
     margin-left: auto;
     display: none;
     justify-content: center;
-    background-color: wheat;
+ 
     flex-wrap: wrap;
     row-gap: .5rem;
     column-gap: 1rem;
@@ -165,24 +179,150 @@ input{
       }
   }
 
-  .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 120px 200px;
-    /* background-color: chocolate; */
-    /* width: 100%; */
-    /* max-width: 100% !important;
-    overflow-x: hidden !important;
-    min-height: 900px; */
-    margin-top: 150px;
-    overflow: hidden;
-    background-color: rgb(47, 0, 255);
+  #content{
+    padding: 10rem 1rem;
 
+  }
+  #reservation{
+    text-align:center;
+    padding: 1rem;
+    input{
+     margin: .5rem;
+    }
   }
 
 
+  #side-menu{
+    padding: 1rem;
+  }
+  // .content{
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   padding: 120px 200px;
+  //   /* background-color: chocolate; */
+  //   /* width: 100%; */
+  //   /* max-width: 100% !important;
+  //   overflow-x: hidden !important;
+  //   min-height: 900px; */
+  //   margin-top: 150px;
+  //   overflow: hidden;
+  // }
+
+
+  .footer{
+    position: relative;
+    background-color: rgb(175, 175, 175);
+    height: 100%;
+    width: 100vw;
+    margin-top: auto;
+    bottom:0;
+    .logo{
+      width: 100px;
+    }
+
+    .icons{
+      width: 1rem;
+    }
+    #contact-details{
+      padding: 1rem;
+      width: 100%;
+  
+    }
+  
+    li img{
+  
+      margin:0 1rem;
+      vertical-align: middle;
+      text-align:center;
+    }
+  }
+  
+
+
+
+  //classes
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+  }
+
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    
+  }
+
+  .article{
+    
+    margin: 2rem 0;
+    flex-wrap: wrap-reverse;
+   
+
+  }
+
+  .article-content{
+    flex-basis: 0;
+    text-align: left;
+    padding: 0 1rem;
+
+    flex-grow: 1;
+    
+  }
+
+  .article-img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    // width: auto;
+    // max-width: 100%;
+    // max-height: auto;
+   
+    
+  }
+
+  .parallax{
+    background-image: url("https://i.ibb.co/4pMt427/image.png");
+    margin: 1rem 0rem ;
+    padding: 0em ;
+  
+    overflow:visible;
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .round-img{
+    border-radius: 50%;
+    max-width: 100%;
+    align-self: center;
+    padding:1rem;
+  }
+ 
+  .flex-equal>*{
+    flex:1;
+
+  }
+
+  .readmore{
+    margin: 1rem 0;
+    background: white;
+   
+    border-radius: 15px;
+    &:hover{
+      background: #D7D7D7;
+    }
+  }
+  ///
+
+  
+  
 
 
   

@@ -4,7 +4,7 @@
                 <div  class="post-content">
                     <form action="newquery.php" method='get'>
                         <span class="close">&times;</span>
-                        <input id="title-input" type="text" name="title" >
+                        <input id="title-input" type="text" name="title" value='add title'>
                         <input type="button" name='img-link' value='add image' id='img-linkID'>
 
                         <div id='add-link'>

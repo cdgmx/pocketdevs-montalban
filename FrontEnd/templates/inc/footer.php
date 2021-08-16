@@ -1,13 +1,45 @@
             
   
+    <div class="footer">
 
+        <div id='footer' class="flex-row">
+            
+            <a href="">
+                <img  class='logo' src="https://i.ibb.co/DKNMyDP/Logo-2-2.png">
+            </a>
 
+            <div id = 'contact-details' class='flex-row flex-equal'>
 
-        <div id ='myBtn' class="add-entry">
-                    <a href="javascript:void(0);" class="nav-close-btn">
-                    <i class="fas fa-plus-circle"></i>
-                    </a>
+                    <div class="flex-column">
+                            <ul>
+                                <a><li><img class = 'icons' src="https://image.flaticon.com/icons/png/512/3203/3203071.png">Farmers Market Arcade Annex87 D 12th Avenue Cubao 1100</li></a>
+                                <a><li><img class = 'icons'  src="https://image.flaticon.com/icons/png/512/455/455705.png">9112528</li></a>
+                                <a><li><img class = 'icons' src="https://image.flaticon.com/icons/png/512/725/725643.png">email@gmail.com</li></a>
+                            </ul>
+                    </div>
+
+                    <div class="flex-column" >
+                            <ul>
+                                <a><li><img class = 'icons'  src="https://image.flaticon.com/icons/png/512/1384/1384021.png">Facebook</li></a>
+                                <a><li><img class = 'icons'  src="https://image.flaticon.com/icons/png/512/1384/1384031.png">Instagram</li></a>
+                                <a><li><img class = 'icons'  src="https://image.flaticon.com/icons/png/512/1384/1384028.png">Youtube</li></a>
+                                <a><li><img class = 'icons'  src="https://image.flaticon.com/icons/png/512/1384/1384033.png">Twitter</li></a>
+                            </ul>
+                    </div>
+
+                </div>
+
         </div>
+
+    </div>
+
+
+
+
+
+            
+
+      
 
       
         <script async defer>
@@ -91,7 +123,7 @@
                 span.onclick = function() {
                     modal.style.display = "none";
                     $(".post-content input[name='post_id']").remove()
-                    
+                    console.log('asasd')
                 }
 
                 // When the user clicks anywhere outside of the modal, close it
