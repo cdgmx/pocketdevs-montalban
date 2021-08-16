@@ -12,8 +12,9 @@
     $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id']:null;
 
     $page = isset($_GET['page'])? $_GET['page']:'';
-
-    if(true){
+   
+      
+    if($user_id){
         switch ($page){
             case "Feed":
 
@@ -41,6 +42,13 @@
                 echo $template;
 
         }
+    }
+    else{
+        $post = new Post;
+        $template = new Template('templates/frontpage.php');
+        $template->title = 'latest posts';
+        $template->posts = $post->getAllPosts();
+        echo $template;
     }
         // if($page === 'Feed'){
       
